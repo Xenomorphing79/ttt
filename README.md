@@ -1,17 +1,26 @@
-## Running React on Repl.it
+# App Overview
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+The app is a simple web application built using React.js. It fetches the contents of a text file from a remote server, parses the content to find the frequency of occurrence of each word, and displays a histogram of the 20 most occurring words. The app also has an export button that allows users to download the histogram data in CSV format.
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+## Components
+1.  Button Component: This component displays a single button that triggers the fetching and parsing of the text file.
+    
+2.  Histogram Component: This component displays the histogram of the 20 most occurring words. It uses the D3.js library to generate the histogram.
 
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
+## External packages used
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+1.  React: A JavaScript library for building user interfaces.
+2.  D3.js: A JavaScript library for visualizing data using HTML, SVG, and CSS.
+3.  axios: A JavaScript library for making HTTP requests from the browser or Node.js.
+4.  papaparse: A JavaScript library for parsing and converting CSV data.
+5.  fs: A built-in Node.js module for working with the file system.
+6.  path: A built-in Node.js module for working with file paths.
 
-### Typescript
+## Hosting
 
-Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+The app has been hosted on Vercel and can be accessed at the following link:
+https://ttt-i2rlpptlf-xenomorphing79.vercel.app/
+
+## Conclusion
+In summary, the app is a simple web application built using React.js and Next.js that fetches the contents of a text file, parses the content to find the frequency of occurrence of each word, and displays a histogram of the 20 most occurring words. It also has an export button that allows users to download the histogram data in CSV format. The app uses the D3.js library to generate the histogram and axios and papaparse to fetch and parse the text file, respectively.
